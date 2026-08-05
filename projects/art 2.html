@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Warehouse controls retrofit — modular PLC architecture and fault recovery." />
+  <title>Warehouse controls retrofit — M. Little</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="project-page">
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-brand" href="../index.html">M. Little</a>
+      <div class="nav-links">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-detail">
+    <a class="back-link" href="../index.html#projects">← All projects</a>
+    <span class="project-meta">2023 · Systems</span>
+    <h1>Warehouse controls retrofit</h1>
+    <p class="overview">
+      Migrated legacy PLC logic to a modular architecture, cutting mean recovery time after faults by 35%.
+    </p>
+
+    <div class="detail-block">
+      <h2>Nerd</h2>
+      <p>
+        Describe the legacy controls pain points: monolithic logic, long recovery after faults, limited diagnostics, or change risk.
+      </p>
+    </div>
+
+    <div class="detail-block">
+      <h2>Approach</h2>
+      <ul>
+        <li>Decompose the program into reusable modules by equipment zone.</li>
+        <li>Standardize fault handling and operator messaging.</li>
+        <li>Stage cutover with parallel validation against the old system.</li>
+      </ul>
+    </div>
+
+    <div class="detail-block">
+      <h2>Outcome</h2>
+      <p>
+        Capture the 35% recovery-time improvement and any secondary wins (easier changeovers, clearer alarms). Link to architecture diagrams if you have them.
+      </p>
+    </div>
+
+    <nav class="project-nav" aria-label="Project">
+      <a href="sortation-cell.html">← Previous</a>
+      <a class="next" href="end-of-arm-tooling.html">Next: End-of-arm tooling →</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> M. Little</p>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
