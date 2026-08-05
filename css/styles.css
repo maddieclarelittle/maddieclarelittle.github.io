@@ -381,6 +381,110 @@ a:hover {
   }
 }
 
+/* Project detail pages */
+body.project-page .site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(237, 241, 244, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+body.project-page .nav-brand,
+body.project-page .nav-links a {
+  color: var(--ink);
+}
+
+body.project-page .nav-links a:hover {
+  color: var(--accent);
+}
+
+.project-detail {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: clamp(2rem, 6vh, 3.5rem) var(--space) clamp(3.5rem, 10vh, 6rem);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.back-link:hover {
+  color: var(--accent-hover);
+}
+
+.project-detail .project-meta {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.project-detail h1 {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.project-detail .overview {
+  margin: 0 0 2.5rem;
+  font-size: 1.2rem;
+  color: var(--ink-muted);
+  line-height: 1.5;
+}
+
+.detail-block {
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.detail-block h2 {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.detail-block p,
+.detail-block ul {
+  margin: 0;
+  color: var(--ink-muted);
+}
+
+.detail-block ul {
+  padding-left: 1.2rem;
+}
+
+.detail-block li + li {
+  margin-top: 0.4rem;
+}
+
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-weight: 600;
+}
+
+.project-nav a {
+  text-decoration: none;
+}
+
+.project-nav .next {
+  margin-left: auto;
+  text-align: right;
+}
+
 @media (max-width: 640px) {
   .nav-links {
     gap: 1rem;
@@ -410,6 +514,15 @@ a:hover {
 
   .sep {
     display: none;
+  }
+
+  .project-nav {
+    flex-direction: column;
+  }
+
+  .project-nav .next {
+    margin-left: 0;
+    text-align: left;
   }
 }
 
