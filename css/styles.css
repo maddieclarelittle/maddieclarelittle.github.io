@@ -256,6 +256,32 @@ a:hover {
   font-size: 1.125rem;
 }
 
+.project-category {
+  margin-top: 2.75rem;
+}
+
+.project-category:first-of-type {
+  margin-top: 0.5rem;
+}
+
+.category-header {
+  margin-bottom: 1rem;
+}
+
+.category-header h3 {
+  margin: 0 0 0.25rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.25rem, 2.4vw, 1.5rem);
+  letter-spacing: -0.01em;
+}
+
+.category-header p {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 1rem;
+}
+
 .project-list {
   list-style: none;
   margin: 0;
@@ -483,6 +509,44 @@ body.project-page .nav-links a:hover {
 .project-nav .next {
   margin-left: auto;
   text-align: right;
+}
+
+/* Art gallery */
+.project-detail.art-detail {
+  max-width: 56rem;
+}
+
+.art-gallery {
+  display: grid;
+  gap: 2.5rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.art-gallery figure {
+  margin: 0;
+}
+
+.art-gallery img {
+  width: 100%;
+  height: auto;
+  background: #d5dee6;
+}
+
+.art-gallery figcaption {
+  margin-top: 0.75rem;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+}
+
+.art-gallery figcaption strong {
+  display: block;
+  margin-bottom: 0.15rem;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
 }
 
 @media (max-width: 640px) {
